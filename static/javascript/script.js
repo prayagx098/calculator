@@ -6,7 +6,10 @@ let DisplayInput='';
 function appendNumber(number) {
   currentInput += number;
   DisplayInput =currentInput;
+  console.log(currentInput)
+  console.log(number)
   updateDisplay();
+
 }
 
 function setOperator(op) {
@@ -15,7 +18,6 @@ function setOperator(op) {
   currentInput += operator;
   DisplayInput=currentInput;
   currentInput = '';
-  
   updateDisplay();
 }
 
