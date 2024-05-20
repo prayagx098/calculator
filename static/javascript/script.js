@@ -3,7 +3,7 @@ let operator = '';
 let result = 0;
 let DisplayInput='';
 
-function appendNumber(number) {
+function addNumber(number) {
   currentInput += number;
   DisplayInput =currentInput;
   console.log(currentInput)
@@ -49,9 +49,20 @@ function calculate() {
         result = 'Error';
       }
       break;
+    case '%':
+      if (inputNumber !== 0) {
+          result %= inputNumber;
+      } else {
+          result = 'Error';
+      }
+      break;
     default:
       result = inputNumber;
   }
+  if (isNaN(result)) {
+    result = 'Error';
+}
+
   DisplayInput = result.toString();
   updateDisplay();
 }
@@ -65,5 +76,9 @@ function clearDisplay() {
 }
 
 function updateDisplay() {
+  // if (DisplayInput = 'NaN') {
+  //   DisplayInput = 'ERROR'
+  // }
+  console.log(DisplayInput)
   document.getElementById('display').innerText = DisplayInput || '0';
 }
