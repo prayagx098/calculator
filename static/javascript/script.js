@@ -76,9 +76,6 @@ function clearDisplay() {
 }
 
 function updateDisplay() {
-  // if (DisplayInput = 'NaN') {
-  //   DisplayInput = 'ERROR'
-  // }
   console.log(DisplayInput)
   document.getElementById('display').innerText = DisplayInput || '0';
 }
