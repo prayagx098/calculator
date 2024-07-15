@@ -4,98 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
+
+  <!-- STYLE -->
   <link rel="stylesheet" href="static/css/styles.css">
+
+  <!-- FAvicon -->
   <link rel="icon" href="https://www.freeiconspng.com/uploads/calculator-icon-4.png">
+
+  <!-- Bootstrap -->
+   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
   <style>
-    h1 {
-        font-size: 2.5rem;
-        margin-left: 38%;
-    }
-
-    @media (max-width: 1200px) {
-        h1 {
-            font-size: 2.2rem;           
-            margin-left: 40%;
-        }
-    }
-
-    @media (max-width: 992px) {
-        h1 {
-            font-size: 2rem;
-            margin-left: 50%;
-        }
-    }
-
-    @media (max-width: 768px) {
-        h1 {
-            font-size: 2.8rem;
-            margin-left: 50%;
-        }
-    }
-
-    @media (max-width: 576px) {
-        h1 {
-            font-size: 2.3rem;
-            margin-left: 20%;
-        }
-    }
-
-    @media (max-width: 375px) {
-        h1 {
-            font-size: 2.5rem;
-        }
-    }
-    body {
-        max-width: 1200px;
-    }
-
-    @media (max-width: 1200px) {
-        body {
-            width: 1200px;
-        }
-    }
-
-    @media (max-width: 576px) {
-        body {
-          width: 379px;
-          height: 674px;
-        }
-    }
-
 </style>
 </head>
 <body>
 <div class="content">
   <div class="heading">
-    <h1 style="align-items: center;">CALCULATOR</h1>
-  </div>
-  <div class="calculator">
-    <div class="maindisplay">
-      <div class="display" id="display">0</div>
-    </div>
-    <!-- CALCULATOR FUNCTIONS -->
-    <div class="calculatorkey">
-      <button class="buttonc" onclick="clearDisplay()">AC</button>
-      <button onclick="setOperator('%')">%</button>
-      <button onclick="setOperator('/')">/</button>
-      <button onclick="clearLast()">&#9003</button>
-      <button onclick="addNumber(7)">7</button>
-      <button onclick="addNumber(8)">8</button>
-      <button onclick="addNumber(9)">9</button>
-      <button onclick="setOperator('+')">+</button>
-      <button onclick="addNumber(4)">4</button>
-      <button onclick="addNumber(5)">5</button>
-      <button onclick="addNumber(6)">6</button>
-      <button onclick="setOperator('-')">-</button>
-      <button onclick="addNumber(1)">1</button>
-      <button onclick="addNumber(2)">2</button>
-      <button onclick="addNumber(3)">3</button>
-      <button onclick="setOperator('*')">*</button>
-      <button onclick="addNumber('00')">00</button>
-      <button onclick="addNumber(0)">0</button>
-      <button onclick="addNumber('.')">.</button>
-      <button class="buttonsubmit" onclick="calculate()">=</button>
-      
+    <h1>CALCULATOR</h1>
+  </div><br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h1>Calculate Content</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quasi unde, tenetur sunt debitis fugit quod consectetur dicta eveniet esse, hic quidem delectus accusantium dolorem est doloribus iusto odio maxime?
+        Odit impedit, necessitatibus aliquid deserunt neque velit, fugit possimus sunt dicta corrupti blanditiis animi repellat similique libero esse exercitationem vero explicabo! Quo sit est, ea dolorum debitis optio nemo molestiae?
+        Quae animi repellendus corrupti quos ab dolorum illum aperiam optio, ipsum unde alias commodi aut quaerat laboriosam maxime itaque officia corporis voluptates assumenda harum. Culpa eius nam vero inventore nulla.</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="calculator">
+          <div class="maindisplay">
+            <div class="display" id="display">0</div>
+          </div>
+          <!-- CALCULATOR FUNCTIONS -->
+          <div class="calculatorkey">
+            <button class="buttonc" onclick="clearDisplay()">AC</button>
+            <button onclick="setOperator('%')">%</button>
+            <button onclick="setOperator('/')">/</button>
+            <button onclick="clearLast()">&#9003</button>
+            <button onclick="addNumber(7)">7</button>
+            <button onclick="addNumber(8)">8</button>
+            <button onclick="addNumber(9)">9</button>
+            <button onclick="setOperator('+')">+</button>
+            <button onclick="addNumber(4)">4</button>
+            <button onclick="addNumber(5)">5</button>
+            <button onclick="addNumber(6)">6</button>
+            <button onclick="setOperator('-')">-</button>
+            <button onclick="addNumber(1)">1</button>
+            <button onclick="addNumber(2)">2</button>
+            <button onclick="addNumber(3)">3</button>
+            <button onclick="setOperator('*')">*</button>
+            <button onclick="addNumber('00')">00</button>
+            <button onclick="addNumber(0)">0</button>
+            <button onclick="addNumber('.')">.</button>
+            <button class="buttonsubmit" onclick="calculate()">=</button>
+            
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

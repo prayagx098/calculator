@@ -1,24 +1,30 @@
 body{
   background-repeat: no-repeat;
   background-size:100%;
-  background-image: linear-gradient( rgb(58, 57, 57) , rgb(0, 0, 0));
-  max-width: 1200px;
-  max-height: 1200px;
   height: 766px;
-  align-items: center;
-  margin-bottom: 100%;
+}
+
+
+.heading{
+margin-left: 40%;
+}
+
+.heading h1{
+  width: fit-content;
+  background: linear-gradient(to left,rgb(83, 83, 83),blue);
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  text-shadow: 2px 2px 7px rgb(255, 255, 255);
 }
 
 .content {
+
   align-content: center;
   flex-wrap: wrap;
 }
 
-.content h1 {
-  align-content: center;
-  align-items: center;
-  color: rgb(216, 212, 212);
-}
+
 
 button{
   border-radius: 10px;
@@ -26,10 +32,6 @@ button{
 .calculator {
     background-color: rgb(84, 90, 96);
     border-radius: 20px;
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px; */
-    margin: 50px auto;
     width: 380px;
     height: 455px;
     
@@ -49,6 +51,7 @@ button{
     font-size: 20px;
     width: 70px;
     height: 50px;
+    border-radius: 10px;
   }
 
   .buttonc {
@@ -73,7 +76,7 @@ button{
     text-align: right;
     background-color: aliceblue;
     width: 305px;
-    height: 55px;
+    height: 65px;
     margin-left: 27px;
     margin-top: 30px;
     border-radius: 20px;

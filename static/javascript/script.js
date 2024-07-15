@@ -76,6 +76,6 @@ function clearDisplay() {
 }
 
 function updateDisplay() {
-  console.log(DisplayInput)
+  console.log(DisplayInput);
   document.getElementById('display').innerText = DisplayInput || '0';
 }
