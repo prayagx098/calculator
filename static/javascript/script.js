@@ -4,13 +4,16 @@ let result = 0;
 let DisplayInput='';
 
 function addNumber(number) {
-  currentInput += number;
-  DisplayInput =currentInput;
-  console.log(currentInput)
-  console.log(number)
-  updateDisplay();
+  if(currentInput.length != 10){
+    currentInput += number;
+    DisplayInput =currentInput;
+    console.log(currentInput)
+    console.log(number)
+    updateDisplay();
+  }
 
 }
+
 
 function setOperator(op) {
   operator = op;
